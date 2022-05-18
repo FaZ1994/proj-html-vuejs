@@ -4,12 +4,12 @@
     <section class="contacts">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-6">
             <span>We have a 95% Successful Pass Rate!</span>
           </div>
-          <div class="col-lg-6 text-lg-end">
+          <div class="col-6 text-end">
             <span>
-              <i class="fa-solid fa-phone px-2"></i>
+              <i class="fa-solid fa-phone fa-rotate-270 px-2"></i>
               Give us a call to book your tuition! 1-800-555-555
             </span>
           </div>
@@ -19,9 +19,9 @@
 
     <!-- HEADER -->
     <header>
-      <div class="container-lg">
+      <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-4">
+          <div class="col-4">
             <a href="#"
               ><img
                 class="logo"
@@ -29,8 +29,8 @@
                 alt="Avada logo"
             /></a>
           </div>
-          <div class="col-lg-6">
-            <ul class="d-flex flex-lg-row justify-content-between align-middle">
+          <div class="col-6">
+            <ul class="d-flex flex-row justify-content-between align-middle">
               <li
                 v-for="(link, index) in Links"
                 class="list-unstyled text-uppercase"
@@ -43,8 +43,8 @@
               </li>
             </ul>
           </div>
-          <div class="text-right col-lg-2 CTA">
-            <button type="call" class="d-lg-block text-uppercase">
+          <div class="text-right col-2 CTA">
+            <button type="call" class="d-block text-uppercase">
               {{ BtnTop }}
             </button>
           </div>
@@ -52,18 +52,7 @@
       </div>
     </header>
 
-    <!-- HERO -->
 
-    <section class="hero">
-      <div class="container-sm">
-        <div class="row">
-          <div class="col-lg-12">
-            <h1>Drive with Avada</h1>
-            <h2>We offer the finest driving tuition money can buy</h2>
-          </div>
-        </div>
-      </div>
-    </section>
   </section>
 </template>
 
@@ -87,7 +76,7 @@ export default {
 /* CONTACTS */
 .contacts {
   background-color: $gray-dark;
-  height: 4em;
+  height: 3em;
   color: $gray-light;
   font-size: 0.8em;
   span {
@@ -98,7 +87,7 @@ export default {
 
 header {
   background-color: $gray-transp;
-  position: sticky;
+  position: relative;
   width: 100%;
   left: 0;
   top: 0;
@@ -117,30 +106,6 @@ header {
     &.active {
       height: 65px;
       background-color: $gray-dark;
-    }
-  }
-
-  .hamburger {
-    cursor: pointer;
-    display: flex;
-    justify-content: flex-end;
-
-    div:hover > span {
-      border-color: $green-main;
-      transition: all 0.3s ease;
-    }
-    span {
-      display: block;
-      width: 30px;
-      padding-bottom: 6px;
-      border-bottom: 1px solid $white;
-
-      &:first-of-type {
-        border-bottom: 3px solid $white;
-      }
-      &:nth-of-type(2) {
-        border-bottom: 2px solid $white;
-      }
     }
   }
 
@@ -175,7 +140,7 @@ header {
         opacity: 1;
         bottom: 0;
         width: 100%;
-      }
+      } 
 
       span {
         font-size: 9px;
@@ -225,30 +190,4 @@ header {
   }
 }
 
-/* HERO */
-.hero {
-  height: 550px;
-  margin-top: -115px;
-  background-image: url("../assets/img/homepage-hero-background.jpg");
-  background-size: cover;
-  background-position: center;
-
-  & div {
-    height: 100%;
-    color: $white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  & h1 {
-    font-size: 4em;
-    font-weight: 500;
-  }
-
-  & h2 {
-    font-size: 1.5em;
-    font-weight: 400;
-  }
-}
 </style>

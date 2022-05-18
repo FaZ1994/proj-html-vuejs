@@ -1,9 +1,53 @@
 @import '~bootstrap/scss/bootstrap';
 
+
+
 $fa-font-path: '~/src/webfonts';
 @import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
 @import '~@fortawesome/fontawesome-free/scss/solid.scss';
 @import '~@fortawesome/fontawesome-free/scss/regular.scss';
-// @import '~@fortawesome/fontawesome-free/scss/brands.scss';
 
-@import './vars';
+
+@import './vars.scss';
+
+/* BUTTON */
+.btn-green {
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 20px;
+    background: $green-main;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    color: $white;
+    border: 2px solid transparent;
+  
+    &:hover {
+      background: $green-sec;
+      border: 2px solid $green-main;
+    }
+  
+    &:focus {
+      outline: none;
+    }
+  }
+
+.btn-blue {
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 8px 18px;
+    border: 3px solid $blue-main;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    color: $blue-main;
+  
+    &:hover {
+      border-color: $green-sec;
+      color: $green-sec;
+    }
+  
+    &:focus {
+      outline: none;
+    }
+  }
