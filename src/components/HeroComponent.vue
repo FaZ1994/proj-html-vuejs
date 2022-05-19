@@ -1,8 +1,8 @@
 <template>
     <section class="hero">
-      <div class="container-sm">
+      <div class="container">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-12">
             <h1>Drive with Avada</h1>
             <h2>We offer the finest driving tuition money can buy</h2>
           </div>
@@ -19,7 +19,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../styles/general.scss";
 
 .hero {

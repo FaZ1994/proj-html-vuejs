@@ -9,10 +9,13 @@
       <call-us-component />
       <courses-component />
       <our-stats />
+      <instructor-component/>
+      <testimonial-component/>
+      <latest-news-component/>
+      <news-letter-component />
     </main>
-    <footer>
+
       <footer-component />
-    </footer>
   </div>
 </template>
 
@@ -24,6 +27,10 @@ import HeroComponent from "./components/HeroComponent.vue";
 import CallUsComponent from "./components/CallUsComponent.vue";
 import CoursesComponent from "./components/CoursesComponent.vue";
 import OurStats from './components/OurStats.vue';
+import InstructorComponent from './components/InstructorComponent.vue';
+import TestimonialComponent from './components/TestimonialComponent.vue';
+import NewsLetterComponent from './components/NewsLetterComponent.vue';
+import LatestNewsComponent from './components/LatestNewsComponent.vue';
 
 
 export default {
@@ -36,6 +43,10 @@ export default {
     CallUsComponent,
     CoursesComponent,
     OurStats,
+    InstructorComponent,
+    TestimonialComponent,
+    NewsLetterComponent,
+    LatestNewsComponent,
   },
 };
 </script>

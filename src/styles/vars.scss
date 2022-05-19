@@ -4,9 +4,13 @@ $main-font: 'Mulish', sans-serif;
 //  COLORS
 
 $white: #ffffff;
+$black: #040b11; // BLACK FIREFLY
+$black-transp-01: rgba(4, 11, 17, 0.1); //FIREFLY WITH .1 OPACITY
+$black-transp-04: rgba(4, 11, 17, 0.4); //FIREFLY WITH .4 OPACITY
 $gray-dark: #484848; // TUNDORA
 $gray-light: #e5e8eb; //ATHENS GRAY
-$gray-transp: rgba(114, 117, 119, .6); // TUNDORA WITH .6 TRANSPARENT
+$gray-light-transp-04:rgba(229, 232, 235, 0.4); //ATHENS GRAY WITH .4 OPACITY
+$gray-transp: rgba(114, 117, 119, .6); // TUNDORA WITH .6 OPACITY
 $green-main: #79b27b; // BAY LEAF
 $green-sec:#69aa53; // DARK BAY LEAF LIKE
 $blue-main: #7f9ea8; // GUMBO

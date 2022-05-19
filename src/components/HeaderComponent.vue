@@ -70,10 +70,9 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../styles/general.scss";
 
-/* CONTACTS */
 .contacts {
   background-color: $gray-dark;
   height: 3em;

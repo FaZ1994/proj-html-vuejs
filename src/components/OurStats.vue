@@ -1,6 +1,5 @@
 <template>
   <section class="our-stats">
-    <!-- our-stats -->
     <div class="container">
       <div class="row no-gutters">
         <div class="col-4">
@@ -54,7 +53,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../styles/general.scss";
 
 .our-stats {
@@ -83,10 +82,6 @@ export default {
     border: none;
     position: relative;
     top: 6px;
-  }
-
-  & > div > div > div:nth-child(2) > div {
-    margin: 50px 0;
   }
 
   .card span {
